@@ -3,8 +3,8 @@ all: dist/index.html dist/style.css dist/favicon.ico
 dist:
 	mkdir -p dist
 
-dist/index.html: src/index.html | dist rules.txt
-	cp $^ $@
+dist/index.html: src/index.html rules.txt | dist
+	cp $< $@
 	sed -f replace.sed -i $@
 
 dist/style.css: src/input.css src/index.html | dist dist/index.html

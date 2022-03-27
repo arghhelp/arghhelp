@@ -1,5 +1,6 @@
 var websites = [
-    "quora.com"
+    "quora.com",
+    "medium.com"
 ];
 
 var websitesWithOperator = websites.map((website) => {
