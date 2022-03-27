@@ -6,7 +6,7 @@ dist:
 dist/index.html: src/index.html | dist
 	cp $^ $@
 
-dist/style.css: src/input.css src/index.html | dist
+dist/style.css: src/input.css src/index.html | dist dist/index.html
 	npx tailwindcss@3.0.23 -i $< -o $@ --minify
 
 .PHONY: all
