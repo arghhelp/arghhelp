@@ -46,7 +46,7 @@
 
         <h3 class="font-bold">🫂 Credits</h3>
         <ul>
-          <li><a href="https://twemoji.twitter.com/">Twemoji favicon</a></li>
+          <li><a href="https://twemoji.twitter.com/">Twemoji (favicon)</a></li>
         </ul>
       </div>
     </div>
@@ -58,7 +58,9 @@
     document.getElementById("email").href = atob("bWFpbHRvOmFyZ2hoZWxwQHByb3Rvbm1haWwuY29t");
 
     var googleQuery = "https://www.google.com/search?hl=en&q="
-    var removeThese = "-site%3Aquora.com";
+
+    // Do not edit! The following line is replaced by the build script.
+    var rules = "";
 
     form = document.getElementById("form");
 
@@ -67,7 +69,7 @@
       var query = formData.get("query");
 
       if (query.length > 0) {
-        searchQuery = `${googleQuery}${query} ${removeThese}`;
+        searchQuery = `${googleQuery}${query} ${rules}`;
         window.location.href = searchQuery;
         return false;
       }
