@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>argh.help - Search results with less spam</title>
+</head>
+
+<body class="h-screen bg-gray-200 text-slate-600 flex flex-col font-light">
+  <main class="flex-grow">
+    <div class="flex justify-center items-center h-full">
+      <div class="flex justify-center items-center px-4 sm:px-6 lg:px-8">
+        <div class="relative">
+          <input type="text" class="bg-slate-50 h-14 w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none"
+            placeholder="Search...">
+          <button class="absolute right-0 top-0 mt-5 mr-4">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <aside class="text-center">
+    <h3 class="font-bold select-none">How does it work?</h3>
+    argh.help appends search engine operators to your query to remove known useless results.
+
+    <h3 class="font-bold">What if I still get spam?</h3>
+    Create an issue here and ask to remove the offending domain from search results.
+
+    <h3 class="font-bold">Privacy policy</h3>
+    argh.help does not store data about you but is hosted on Cloudflare and redirects your search to Google Search.
+  </aside>
+  <footer class="text-center select-none pt-4">
+    argh.help is made by Jeremias Yehdegho in Graz, Austria &middot; <a id="email">Contact</a>
+  </footer>
+  <script>
+    document.getElementById("email").href = atob("bWFpbHRvOmFyZ2hoZWxwQHByb3Rvbm1haWwuY29t");
+  </script>
+</body>
+
+</html>
